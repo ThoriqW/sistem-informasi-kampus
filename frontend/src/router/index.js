@@ -43,15 +43,20 @@ const routes = [
     },
     {
         name: "dashboard",
-        path: "/dashboard",
+        path: "/admin/dashboard",
         component: () => import("../dashboard/views/Dashboard.vue")
+    },
+    {
+        name: "admin-document",
+        path: "/admin/document",
+        component: () => import("../dashboard/views/Document.vue")
     },
 ]
 
 const router = createRouter({
     history: createWebHistory(),
     routes,
-    linkActiveClass: "bg-primary-color text-white-color",
+    linkActiveClass: "bg-primary-color text-white",
 })
 
 export default router;

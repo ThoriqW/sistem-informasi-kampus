@@ -13,7 +13,6 @@ const modules = [Pagination, Navigation];
 <template>
         <swiper
             :modules="modules"
-            :space-between="50"
             :loop="true"
             navigation
             :pagination="{ clickable: true }"

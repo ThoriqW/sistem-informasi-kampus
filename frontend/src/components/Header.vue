@@ -67,23 +67,23 @@ const hideDropdown = (menu) => {
         <div class="relative z-50" @mouseover="showDropdown('DOKUMEN')" @mouseleave="hideDropdown('DOKUMEN')">
           <router-link class="py-3 px-5 inline-block hover:bg-primary-color hover:text-white-color transition-colors" to="/document">DOKUMEN</router-link>
           <div v-if="isDropdownDokumenVisible" class="bg-secondary-color flex flex-col absolute w-60 shadow-lg">
-            <router-link to="/document/document-spmi" class="px-4 py-3 hover:bg-primary-color hover:text-white-color text-sm">KEBIJAKAN SPMI</router-link>
+            <router-link to="/document/kebijakan-spmi" class="px-4 py-3 hover:bg-primary-color hover:text-white-color text-sm">KEBIJAKAN SPMI</router-link>
             <router-link to="/document/document-spmi" class="px-4 py-3 hover:bg-primary-color hover:text-white-color text-sm">PEDOMAN SPMI</router-link>
             <div @mouseover="showDropdown('SOP')" @mouseleave="hideDropdown('SOP')" class="relative px-4 py-3 hover:bg-primary-color hover:text-white-color text-sm">
               <p>SOP</p>
               <div class="absolute left-[100%] w-full top-0">
                 <div class="flex flex-col shadow-lg">
-                  <router-link v-if="isSubDropdownDokumenVisibleSOP" to="/document/document-spmi" class=" px-4 py-3 hover:bg-primary-color hover:text-white-color text-black text-sm bg-secondary-color">REKTORAT</router-link>
-                  <router-link v-if="isSubDropdownDokumenVisibleSOP" to="/document/document-spmi" class=" px-4 py-3 hover:bg-primary-color hover:text-white-color text-black text-sm bg-secondary-color">WAKIL REKTOR I BIDANG AKADEMIK</router-link>
-                  <router-link v-if="isSubDropdownDokumenVisibleSOP" to="/document/document-spmi" class=" px-4 py-3 hover:bg-primary-color hover:text-white-color text-black text-sm bg-secondary-color">WAKIL REKTOR II BIDANG AKADEMIK</router-link>
-                  <router-link v-if="isSubDropdownDokumenVisibleSOP" to="/document/document-spmi" class=" px-4 py-3 hover:bg-primary-color hover:text-white-color text-black text-sm bg-secondary-color">FAKULTAS DAN PROGRAM STUDI</router-link>
-                  <router-link v-if="isSubDropdownDokumenVisibleSOP" to="/document/document-spmi" class=" px-4 py-3 hover:bg-primary-color hover:text-white-color text-black text-sm bg-secondary-color">BADAN PENJAMINAN MUTU</router-link>
-                  <router-link v-if="isSubDropdownDokumenVisibleSOP" to="/document/document-spmi" class=" px-4 py-3 hover:bg-primary-color hover:text-white-color text-black text-sm bg-secondary-color">BAAK</router-link>
-                  <router-link v-if="isSubDropdownDokumenVisibleSOP" to="/document/document-spmi" class=" px-4 py-3 hover:bg-primary-color hover:text-white-color text-black text-sm bg-secondary-color">PERPUSTAKAAN</router-link>
+                  <router-link v-if="isSubDropdownDokumenVisibleSOP" to="/document/" id="sublink" class="px-4 py-3 text-black text-sm bg-secondary-color">REKTORAT</router-link>
+                  <router-link v-if="isSubDropdownDokumenVisibleSOP" to="/document/" id="sublink" class="px-4 py-3 text-black text-sm bg-secondary-color">WAKIL REKTOR I BIDANG AKADEMIK</router-link>
+                  <router-link v-if="isSubDropdownDokumenVisibleSOP" to="/document/" id="sublink" class="px-4 py-3 text-black text-sm bg-secondary-color">WAKIL REKTOR II BIDANG AKADEMIK</router-link>
+                  <router-link v-if="isSubDropdownDokumenVisibleSOP" to="/document/" id="sublink" class="px-4 py-3 text-black text-sm bg-secondary-color">FAKULTAS DAN PROGRAM STUDI</router-link>
+                  <router-link v-if="isSubDropdownDokumenVisibleSOP" to="/document/" id="sublink" class="px-4 py-3 text-black text-sm bg-secondary-color">BADAN PENJAMINAN MUTU</router-link>
+                  <router-link v-if="isSubDropdownDokumenVisibleSOP" to="/document/" id="sublink" class="px-4 py-3 text-black text-sm bg-secondary-color">BAAK</router-link>
+                  <router-link v-if="isSubDropdownDokumenVisibleSOP" to="/document/" id="sublink" class="px-4 py-3 text-black text-sm bg-secondary-color">PERPUSTAKAAN</router-link>
                 </div>
               </div>
             </div>
-            <router-link to="/document/document-spmi" class="px-4 py-3 hover:bg-primary-color hover:text-white-color text-sm">MANUAL DAN STANDAR SPMI</router-link>
+            <router-link to="/document/manual-dan-standar-spmi" class="px-4 py-3 hover:bg-primary-color hover:text-white-color text-sm">MANUAL DAN STANDAR SPMI</router-link>
           </div>
         </div>
         <router-link class="py-3 px-5 hover:bg-primary-color hover:text-white-color transition-colors" to="/contact">KONTAK</router-link>
@@ -94,3 +94,16 @@ const hideDropdown = (menu) => {
     </div>
   </div>
 </template>
+
+<style>
+
+  #sublink {
+    color: rgb(0 0 0);
+  }
+
+  :hover#sublink {
+    background-color: #0EA861;
+    color: rgb(255 255 255);
+  }
+
+</style>

@@ -22,17 +22,17 @@ import Sidebar from '../component/Sidebar.vue';
                 <div class="p-5 flex flex-col justify-between bg-gradient-to-r from-primary-color to-primary-gradient-color rounded-xl">
                     <p class="text-[#104F32] font-thin">Jumlah Dokumen</p>
                     <p class="text-4xl mb-4 mt-4 text-white font-bold">18</p>
-                    <p class="text-white font-bold">Dokumen SPMI</p>
+                    <p class="text-white font-bold">Dokumen</p>
                 </div>
                 <div class="p-5 bg-secondary-color flex flex-col justify-between rounded-xl">
-                    <p class="font-thin">SPP 2023</p>
-                    <p class="text-4xl mb-4 mt-4  text-primary-color font-bold">Rp2,500,000</p>
-                    <p class="font-bold">SPP</p>
+                    <p class="font-thin">Jumlah Article</p>
+                    <p class="text-4xl mb-4 mt-4  text-primary-color font-bold">25</p>
+                    <p class="font-bold">Article</p>
                 </div>
                 <div class="p-5 flex flex-col justify-between border border-2 border-primary-color rounded-xl">
-                    <p class="font-thin">Jumlah Mahasiswa</p>
-                    <p class="text-4xl mb-4 mt-4  text-primary-color font-bold">190</p>
-                    <p class="font-bold">Mahasiswa</p>
+                    <p class="font-thin">Article Aktif</p>
+                    <p class="text-4xl mb-4 mt-4  text-primary-color font-bold">19</p>
+                    <p class="font-bold">Aktif</p>
                 </div>
             </div>
         </div>
