@@ -47,23 +47,25 @@ const getImageUrl = (path) => {
 </script>
 
 <template>
-    <TransitionGroup tag="ul" name="list" class="container">
-        <div v-for="item in displayedItems" :key="item">
-            <div class="flex mb-5 items-center">
-                <img :src="getImageUrl(item.image)" alt="news-pic" class="w-96">
-                <div class="px-3 py-5">
-                    <a class="bg-gradient-to-r from-primary-color to-primary-gradient-color inline-block py-1 px-2 mb-3">
-                        <p class="text-xs text-white-color">KEGIATAN SOSIALISASI</p>
-                    </a>
-                    <h1 class="text-2xl font-semibold mb-3">{{ item.title }}</h1>
-                    <p class="text-sub-font text-sm mb-3">{{ item.subTitle }}</p>
-                    <a class="bg-gradient-to-r from-primary-color to-primary-gradient-color hover:from-transparent hover:to-transparent hover:ring-1 hover:ring-primary-color hover:ring-inset text-white-color inline-block py-2 px-3 cursor-pointer hover:text-primary-color transition-colors">
-                        <p class="text-xs">Read More</p>
-                    </a>
+    <div class="flex justify-center">
+        <TransitionGroup tag="ul" name="list" class="grid grid-cols-3 gap-3">
+            <div v-for="item in displayedItems" :key="item">
+                <div class="flex flex-col mb-5 items-center w-96">
+                    <img :src="getImageUrl(item.image)" alt="news-pic">
+                    <div class="py-5">
+                        <a class="bg-gradient-to-r from-primary-color to-primary-gradient-color inline-block py-1 px-2 mb-3">
+                            <p class="text-xs text-white-color">KEGIATAN SOSIALISASI</p>
+                        </a>
+                        <h1 class="text-xl font-semibold mb-3">{{ item.title }}</h1>
+                        <p class="text-sub-font text-sm mb-3">{{ item.subTitle }}</p>
+                        <a class="bg-gradient-to-r from-primary-color to-primary-gradient-color hover:from-transparent hover:to-transparent hover:ring-1 hover:ring-primary-color hover:ring-inset text-white-color inline-block py-2 px-3 cursor-pointer hover:text-primary-color transition-colors">
+                            <p class="text-xs">Read More</p>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </TransitionGroup>
+        </TransitionGroup>
+    </div>
     <div class="flex justify-center">
         <button class="text-primary-color" @click="showMoreItem">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 animate-bounce">

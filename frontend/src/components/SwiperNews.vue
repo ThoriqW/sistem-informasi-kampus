@@ -19,10 +19,10 @@ const modules = [Pagination, Navigation];
             :pagination="{ clickable: true }"
         >
         <swiper-slide>
-            <div class="bg-[url('assets/images/news-1.jpg')] h-[500px] bg-cover">
+            <div class="bg-[url('assets/images/news-1.jpg')] h-[600px] bg-cover bg-center">
                 <div class="h-full bg-slate-900/60 flex items-end py-5 px-20">
                     <div class="text-white-color">
-                        <h1 class="text-4xl font-bold leading-normal tracking-wide">SOSIALISASI KAMPUS STMIK BINA MULIA PALU PADA
+                        <h1 class="text-4xl w-4/5 font-bold leading-normal tracking-wide">SOSIALISASI KAMPUS STMIK BINA MULIA PALU PADA
                             SMKN 1 TOLITOLI
                         </h1>
                         <p class="font-semibold">21 SEP, 2023</p>
@@ -31,13 +31,13 @@ const modules = [Pagination, Navigation];
             </div>
         </swiper-slide>
         <swiper-slide>
-            <div class="bg-[url('assets/images/news-1.jpg')] h-[500px] bg-cover">
+            <div class="bg-[url('assets/images/news-1.jpg')] h-[600px] bg-cover bg-center">
                 <div class="bg-slate-900/[0.4] h-full flex items-end p-5">
                 </div>
             </div>
         </swiper-slide>
         <swiper-slide>
-            <div class="bg-[url('assets/images/news-1.jpg')] h-[500px] bg-cover">
+            <div class="bg-[url('assets/images/news-1.jpg')] h-[600px] bg-cover bg-center">
                 <div class="bg-slate-900/[0.4] h-full flex items-end p-5">
                 </div>
             </div>

@@ -1,6 +1,6 @@
 <script setup>
-    import Header from '../components/Header.vue';
     import Footer from '../components/Footer.vue';
+    import Header from '../components/Header.vue';
     import { VuePDF, usePDF } from '@tato30/vue-pdf'
 
 
@@ -35,11 +35,13 @@
 
     <div class="px-20 mt-10">
         <h1 class="text-2xl mb-5">A1 SOP SPMI</h1>
-        <div>
-            <VuePDF :pdf="pdf" @loaded="onLoaded" />
-        </div>
-        <div class="h-5">
-            <p>test</p>
+        <div class="w-full flex justify-center">
+            <div class="flex flex-col">
+                <VuePDF :pdf="pdf" @loaded="onLoaded" />
+                <a class="bg-gradient-to-r text-center from-primary-color to-primary-gradient-color hover:from-transparent hover:to-transparent hover:ring-1 hover:ring-primary-color hover:ring-inset text-white-color inline-block py-2 px-3 cursor-pointer hover:text-primary-color transition-colors">
+                    <p class="text-xs">Download PDF</p>
+                </a>
+            </div>
         </div>
     </div>
     

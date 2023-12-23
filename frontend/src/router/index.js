@@ -22,6 +22,11 @@ const routes = [
         component: () => import("../views/Faculty.vue")
     },
     {
+        name: "teknik-informatika",
+        path: "/teknik-informatika",
+        component: () => import("../views/faculty/TeknikInformatika.vue")
+    },
+    {
         name: "document",
         path: "/document",
         component: () => import("../views/Document.vue")

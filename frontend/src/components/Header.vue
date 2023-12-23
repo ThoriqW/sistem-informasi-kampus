@@ -1,5 +1,6 @@
 <script setup>
 import { computed, ref } from 'vue';
+import { RouterLink } from 'vue-router';
 
 const currentDate = computed(() => {
   var today = new Date();
@@ -54,12 +55,12 @@ const hideDropdown = (menu) => {
     </div>
     <div class="flex justify-between px-20 shadow-lg">
       <div class="flex font-semibold">
-        <router-link class="py-3 px-5 hover:bg-primary-color hover:text-white-color active:bg-primary-color transition-colors" to="/">HOME</router-link>
+        <router-link class="py-3 px-5 hover:bg-primary-color hover:text-white-color transition-colors" to="/">HOME</router-link>
         <router-link class="py-3 px-5 hover:bg-primary-color hover:text-white-color transition-colors" to="/about">TENTANG BMP</router-link>
         <div class="relative z-50" @mouseover="showDropdown('FAKULTAS')" @mouseleave="hideDropdown('FAKULTAS')">
           <router-link class="py-3 px-5 inline-block hover:bg-primary-color hover:text-white-color transition-colors" to="/faculty">FAKULTAS</router-link>
           <div v-if="isDropdownFacultyVisible" class="bg-secondary-color flex flex-col absolute w-60 shadow-lg">
-            <a href="" class="px-4 py-3 hover:bg-primary-color hover:text-white-color text-sm">TEKNIK INFORMATIKA</a>
+            <RouterLink to="/teknik-informatika" class="px-4 py-3 hover:bg-primary-color hover:text-white-color active:bg-primary-color text-sm transition-colors">TEKNIK INFORMATIKA</RouterLink>
             <a href="" class="px-4 py-3 hover:bg-primary-color hover:text-white-color text-sm">SISTEM INFORMASI</a>
           </div>
         </div>
@@ -71,7 +72,7 @@ const hideDropdown = (menu) => {
             <div @mouseover="showDropdown('SOP')" @mouseleave="hideDropdown('SOP')" class="relative px-4 py-3 hover:bg-primary-color hover:text-white-color text-sm">
               <p>SOP</p>
               <div class="absolute left-[100%] w-full top-0">
-                <div class="flex flex-col">
+                <div class="flex flex-col shadow-lg">
                   <router-link v-if="isSubDropdownDokumenVisibleSOP" to="/document/document-spmi" class=" px-4 py-3 hover:bg-primary-color hover:text-white-color text-black text-sm bg-secondary-color">REKTORAT</router-link>
                   <router-link v-if="isSubDropdownDokumenVisibleSOP" to="/document/document-spmi" class=" px-4 py-3 hover:bg-primary-color hover:text-white-color text-black text-sm bg-secondary-color">WAKIL REKTOR I BIDANG AKADEMIK</router-link>
                   <router-link v-if="isSubDropdownDokumenVisibleSOP" to="/document/document-spmi" class=" px-4 py-3 hover:bg-primary-color hover:text-white-color text-black text-sm bg-secondary-color">WAKIL REKTOR II BIDANG AKADEMIK</router-link>

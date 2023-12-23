@@ -29,12 +29,12 @@ import Footer from '../components/Footer.vue';
     </div>
 
     <!-- Visi Misi Section -->
-    <div class="px-20 grid grid-cols-2 gap-5 mt-20">
-        <div class="bg-primary-color flex flex-col items-center px-10 py-11">
+    <div class="px-20 grid grid-cols-2 mt-20">
+        <div class="bg-primary-color flex flex-col items-center px-10 py-11 w-3/5 justify-self-end">
             <h1 class="text-white-color text-3xl font-semibold mb-5">Visi<span class="text-slate-900">.</span></h1>
             <p class="text-center text-white-color">Menjadi pusat ilmu pengetahuan, teknologi, dan kebudayaan yang unggul dan berdaya saing, melalui upaya mencerdasakan kehidupan bangsa untuk meningkatkan kesejahteraan masyarakat, sehingga berkontribusi bagi pembangunan masyarakat Indonesia dan dunia</p>
         </div>
-        <div class="bg-secondary-color flex flex-col px-10 py-11 items-center">
+        <div class="bg-secondary-color flex flex-col px-10 py-11 items-center w-3/5">
             <h1 class="text-3xl font-semibold mb-5">Misi<span class="text-primary-color">.</span></h1>
             <ol type="1" class="text-sub-font">
                 <li>Menyediakan akses yang luas dan adil, serta pendidikan dan pengajaran yang berkualitas.</li>
