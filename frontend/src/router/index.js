@@ -51,6 +51,11 @@ const routes = [
         path: "/admin/document",
         component: () => import("../dashboard/views/Document.vue")
     },
+    {
+        name: "admin-article",
+        path: "/admin/article",
+        component: () => import("../dashboard/views/Article.vue")
+    },
 ]
 
 const router = createRouter({

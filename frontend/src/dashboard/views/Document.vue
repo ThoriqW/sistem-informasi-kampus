@@ -29,10 +29,8 @@ let resultPdf = ref(false);
                         <h1 class="text-lg mr-5">Upload Document</h1>
                         <hr class="w-64 h-1 bg-primary-color border-0 rounded">
                     </div>
-                    <div class="flex w-full">
-                        <label class="mr-20 font-medium" for="title">Title</label>
-                        <textarea id="title" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your title here..."></textarea>
-                    </div>
+                    <label class="font-medium text-lg" for="title">Title</label>
+                    <textarea id="title" rows="4" class="block p-2.5 mt-5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-primary-color" placeholder="Write your title here..."></textarea>
                 </form>
                 <div class="mt-10">
                     <div class="mb-10">
