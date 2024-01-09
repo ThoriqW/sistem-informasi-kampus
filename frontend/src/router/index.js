@@ -37,6 +37,11 @@ const routes = [
         component: () => import("../views/document/DocumentSpmi.vue")
     },
     {
+        name: "kebijakan-spmi",
+        path: "/document/kebijakan-spmi",
+        component: () => import("../views/document/KebijakanSpmi.vue")
+    },
+    {
         name: "login",
         path: "/login",
         component: () => import("../views/Login.vue")

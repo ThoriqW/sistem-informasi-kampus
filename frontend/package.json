@@ -10,7 +10,6 @@
     "watch": "tailwindcss -i ./src/style.css -o ./dist/output.css --watch"
   },
   "dependencies": {
-    "@tato30/vue-pdf": "^1.8.1",
     "axios": "^1.6.2",
     "swiper": "^10.3.0",
     "vue": "^3.3.4",
